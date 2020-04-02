@@ -3,6 +3,7 @@ let maxVert = 800;
 let maxDist = 400;
 let inc=0;
 let mouseFlip = true;
+const canvas;
 
 function makeShape(){
 		for (var i = 0; i <= maxVert; i++) {
@@ -23,7 +24,8 @@ function makeShape(){
 }
 
 function setup(){
-	createCanvas(innerWidth,innerHeight,WEBGL);
+	canvas = createCanvas(innerWidth/2,innerHeight/2,WEBGL);
+	canvas.position(innerWidth/2-canvas.width/2, innerHeight/2-canvas.height/2);
 	//fill(0);
 	//strokeWeight(1);
 	noStroke();
@@ -33,13 +35,13 @@ function setup(){
 }
 
 function draw(){
-	background(0,20,0);
+	canvas.background(0,20,0);
 	orbitControl();
 	if (mouseFlip=true){
-		makeShape();
+		canvas.makeShape();
 	} 
 }
 
 function mousePressed(){
-	redraw();
+	canvas.redraw();
 }
