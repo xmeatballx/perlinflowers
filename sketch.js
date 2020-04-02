@@ -23,7 +23,7 @@ function makeShape(){
 }
 
 function setup(){
-	createCanvas(425,550,WEBGL);
+	createCanvas(innerWidth,innerHeight,WEBGL);
 	//fill(0);
 	//strokeWeight(1);
 	noStroke();
