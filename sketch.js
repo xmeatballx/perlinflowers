@@ -24,8 +24,7 @@ function makeShape(){
 }
 
 function setup(){
-	canvas = createCanvas(innerWidth/2,innerHeight/2,WEBGL);
-	canvas.position(innerWidth/2-canvas.width/2, innerHeight/2-canvas.height/2);
+	canvas = createCanvas(425,650,WEBGL);
 	//fill(0);
 	//strokeWeight(1);
 	noStroke();
