@@ -1,3 +1,2 @@
-# project 1 moon phase challenge
-
-# perlinflowers
+# Perlin Flowers
+### Shapes generated on click
