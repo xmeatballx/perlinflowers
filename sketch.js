@@ -3,7 +3,7 @@ let maxVert = 800;
 let maxDist = 400;
 let inc=0;
 let mouseFlip = true;
-const canvas;
+
 
 function makeShape(){
 		for (var i = 0; i <= maxVert; i++) {
@@ -24,7 +24,7 @@ function makeShape(){
 }
 
 function setup(){
-	canvas = createCanvas(425,650,WEBGL);
+	createCanvas(425,650,WEBGL);
 	//fill(0);
 	//strokeWeight(1);
 	noStroke();
