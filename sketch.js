@@ -24,7 +24,7 @@ function makeShape(){
 }
 
 function setup(){
-	createCanvas(425,650,WEBGL);
+	createCanvas(625,650,WEBGL);
 	//fill(0);
 	//strokeWeight(1);
 	noStroke();
@@ -34,7 +34,7 @@ function setup(){
 }
 
 function draw(){
-	background(0,20,0);
+	background(0,0,0);
 	orbitControl();
 	if (mouseFlip=true){
 		makeShape();
