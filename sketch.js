@@ -34,13 +34,13 @@ function setup(){
 }
 
 function draw(){
-	canvas.background(0,20,0);
+	background(0,20,0);
 	orbitControl();
 	if (mouseFlip=true){
-		canvas.makeShape();
+		makeShape();
 	} 
 }
 
 function mousePressed(){
-	canvas.redraw();
+	redraw();
 }
