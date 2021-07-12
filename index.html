@@ -8,12 +8,17 @@
     <style> body {padding: 0; margin: 0;} </style>
     <script src="p5.js"></script>
     <script src="p5.sound.js"></script>
-    <script src="sketch.js"></script>
-    <style>
+  </head>
+  <body>
+    <h1>CLICK TO GENERATE SHAPES</h1>
+    <div id="p5parent"></div>
+     <script src="sketch.js"></script>
+     <style>
       body{
+        overflow: hidden;
         text-align: center;
         font-family: 'Rubik Mono One';
-        background-color: black;
+        /*background-color: black;*/
         color: white;
         user-select: none; /* supported by Chrome and Opera */
         -webkit-user-select: none; /* Safari */
@@ -21,9 +26,14 @@
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
       }
+      #p5parent {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
     </style>
-  </head>
-  <body>
-    <h1>CLICK TO GENERATE SHAPES</h1>
   </body>
 </html>

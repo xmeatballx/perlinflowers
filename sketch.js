@@ -1,6 +1,6 @@
 let vert = [];
 let maxVert = 800;
-let maxDist = 400;
+let maxDist = 380;
 let inc=0;
 let mouseFlip = true;
 
@@ -24,7 +24,8 @@ function makeShape(){
 }
 
 function setup(){
-	createCanvas(625,650,WEBGL);
+	let c = createCanvas(windowWidth,windowHeight,WEBGL);
+	c.parent('p5parent');
 	//fill(0);
 	//strokeWeight(1);
 	noStroke();
@@ -42,5 +43,9 @@ function draw(){
 }
 
 function mousePressed(){
+	redraw();
+}
+
+function touchStarted() {
 	redraw();
 }
